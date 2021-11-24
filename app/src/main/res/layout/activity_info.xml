@@ -29,7 +29,7 @@
                 android:layout_height="128dp"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="16dp"
-                android:text="Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto final. ... Existen múltiples variantes del texto original, algunas casi sin parecido con él."
+                android:text="MediMED es una aplicacion creada para el eficiente agendamiento de horas medicas segun especialidad, esta oficina virtual ofrece un catalogo de profesionales con sus respectivas ares de especialidad y tambien el valor de los tratamientos que ofrecen."
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.468"
                 app:layout_constraintStart_toStartOf="parent"
