@@ -127,35 +127,12 @@
             android:layout_height="match_parent">
 
             <TableLayout
-                android:layout_width="329dp"
-                android:layout_height="138dp"
+                android:layout_width="320dp"
+                android:layout_height="75dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="54dp">
-
-                    <Button
-                        android:id="@+id/button9"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:backgroundTint="#33B3FF"
-                        android:text="Mis Rutinas"
-                        app:cornerRadius="25dp" />
-
-                    <Button
-                        android:id="@+id/button5"
-                        android:layout_width="140dp"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:backgroundTint="#33B3FF"
-                        android:text="Mis Dietas"
-                        app:cornerRadius="25dp" />
-                </TableRow>
 
                 <TableRow
                     android:layout_width="match_parent"
@@ -173,7 +150,7 @@
 
                     <Button
                         android:id="@+id/button6"
-                        android:layout_width="wrap_content"
+                        android:layout_width="140dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:backgroundTint="#33B3FF"

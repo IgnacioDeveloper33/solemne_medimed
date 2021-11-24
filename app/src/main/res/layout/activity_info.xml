@@ -93,7 +93,7 @@
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/logotipo"
+            app:srcCompat="@drawable/captura"
             tools:srcCompat="@drawable/captura" />
 
     </androidx.cardview.widget.CardView>

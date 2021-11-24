@@ -150,4 +150,8 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, info_act.class);
         startActivity(i);
     }
+    public void cerrar(View view)
+    {
+        finish();
+    }
 }
