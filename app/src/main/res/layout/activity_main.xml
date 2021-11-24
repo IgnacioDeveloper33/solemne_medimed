@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="289dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logotipo" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="323dp"
+        android:layout_height="401dp"
+        android:layout_marginTop="28dp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="396dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="270dp"
+                android:layout_height="111dp"
+                android:layout_marginTop="32dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/etuser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Ingrese Usuario"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/etpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Ingrese Contraseña"
+                    android:inputType="textPassword"
+                    android:minHeight="48dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="191dp"
+                android:layout_height="93dp"
+                android:layout_marginTop="44dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                <Button
+                    android:id="@+id/btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#33B3FF"
+                    android:onClick="LoadSession"
+                    android:text="Iniciar Sesión"
+                    app:cornerRadius="25dp" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#33B3FF"
+                    android:minHeight="48dp"
+                    android:text="Salir de Biofit"
+                    app:cornerRadius="25dp"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="293dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="32dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.487"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="59dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:onClick="Youtube"
+                    app:srcCompat="@drawable/youtubeico"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="84dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:onClick="Facebook"
+                    app:srcCompat="@drawable/faceico"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="65dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:onClick="Twitter"
+                    app:srcCompat="@drawable/twicon"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <ImageButton
+                    android:id="@+id/imageButton8"
+                    android:layout_width="62dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:onClick="Info"
+                    app:srcCompat="@drawable/info"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/msj"
+                android:layout_width="217dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#F44336"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ProgressBar
+                android:id="@+id/pb"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="28dp"
+                android:layout_height="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.945"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                app:layout_constraintVertical_bias="0.666" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="375dp"
+        android:layout_height="41dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.771">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="286dp"
+                android:layout_height="24dp"
+                android:text="Copyright BioFit, Todos los derechos reservados "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
