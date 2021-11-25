@@ -94,7 +94,7 @@
                 android:layout_width="313dp"
                 android:layout_height="107dp"
                 android:layout_marginTop="48dp"
-                android:text="MediMED es la herramienta definitiva de agendamiento de hora de profesionales independientes,  tambien es la encargada del mayor manejo de gestion de centros medicos y de salud del pais. Si quieres conocernos puedes visitar biofit.cl"
+                android:text="MediMED es la herramienta definitiva de agendamiento de hora de profesionales independientes,  tambien es la encargada del mayor manejo de gestion de centros medicos y de salud del pais. Si quieres conocernos puedes visitar medimed.cl"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.6"
                 app:layout_constraintStart_toStartOf="parent"
